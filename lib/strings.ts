@@ -1,0 +1,36 @@
+// All UI copy lives here so it can be translated later.
+export const S = {
+  appName: "Clips Web",
+  tagline: "One long video. Ten posts that hook.",
+  pitch: "Drop a video. Get short vertical clips with a strong opening line, ready for WhatsApp and TikTok. Your video never leaves your phone.",
+  previewBanner: "Early preview: audio upload is live. Clip finding and export are being switched on step by step.",
+  pick: "Choose a video",
+  pickHint: "or drop it here",
+  pickSub: "MP4, MOV, WebM · up to 2 hours",
+  howMany: "How many clips?",
+  freeTag: "Free",
+  proTag: "Soon",
+  extracting: "Getting the audio from your video…",
+  uploading: "Sending audio (a small file, not your video)",
+  resuming: "Connection lost. Resuming when you're back online…",
+  retrying: "Network hiccup. Trying again…",
+  tooBig: "This file may be too big for your phone's memory. Try a shorter video.",
+  tooLong: "This video is longer than 2 hours. Please use a shorter one.",
+  notVideo: "That doesn't look like a video or audio file.",
+  noAudio: "This video has no audio track, so there is nothing to find clips in.",
+  cantDecode: "This phone's browser can't read this video's audio format. Try a different file or browser (Chrome works best).",
+  workerFailed: "Couldn't start. Check your connection and try again.",
+  startOver: "Start over",
+  retry: "Try again",
+  resume: "Resume",
+  resumeFound: "You have an unfinished upload",
+  reselect: "Choose the same file again to continue",
+  done: "Audio uploaded",
+  keepOpen: "Keep this tab open. We keep your screen awake.",
+} as const;
+
+export const CLIP_OPTIONS = [
+  { n: 10, free: true, label: "10 clips" },
+  { n: 30, free: false, label: "30 clips" },
+  { n: 50, free: false, label: "50 clips" },
+] as const;
